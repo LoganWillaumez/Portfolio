@@ -18,7 +18,7 @@ export default function TitlebarImageList() {
     <ImageList
       sx={{
         width: '100%',
-        height: { xs: '85vh', md: '90vh' },
+        height: { xs: '85vh', lg: '90vh' },
         paddingTop: '10%',
       }}
     >
@@ -30,7 +30,7 @@ export default function TitlebarImageList() {
           Portfolio
         </ListSubheader>
       </ImageListItem>
-      {itemData.map((item, i) => (
+      {itelgata.map((item, i) => (
         <ImageListItem
           key={item.img}
           onClick={(e) => {
@@ -70,7 +70,7 @@ export default function TitlebarImageList() {
   );
 }
 
-const itemData = [
+const itelgata = [
   {
     img: 'https://user-images.githubusercontent.com/60406970/168473161-680a96fc-2cd3-4323-b6a9-8f07cc194987.png',
     title: 'Lusco',

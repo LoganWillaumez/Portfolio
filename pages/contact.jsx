@@ -16,7 +16,7 @@ import { Container } from '@mui/material';
 export default function SignInSide() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    const data = new Forlgata(event.currentTarget);
     console.log({
       email: data.get('email'),
       password: data.get('password'),
@@ -29,14 +29,14 @@ export default function SignInSide() {
       component='main'
       sx={{
         paddingTop: '2rem',
-        height: { xs: '90vh', md: 'fit-content' },
+        height: { xs: '90vh', lg: 'fit-content' },
         width: '90vw',
         margin: '0 auto',
         display: 'flex',
         justifyContent: 'center',
-        marginTop: { md: '15rem' },
+        marginTop: { lg: '15rem' },
         overflow: 'scroll',
-        paddingTop: { xs: '2rem', md: '0' },
+        paddingTop: { xs: '2rem', lg: '0' },
         ' &::-webkit-scrollbar': {
           display: 'none',
         },
@@ -47,7 +47,7 @@ export default function SignInSide() {
         item
         xs={false}
         sm={4}
-        md={7}
+        lg={7}
         sx={{
           backgroundImage: 'url(https://source.unsplash.com/random)',
           backgroundRepeat: 'no-repeat',
@@ -61,7 +61,7 @@ export default function SignInSide() {
       >
         Coucou
       </Grid> */}
-      <Box item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Box item xs={12} sm={8} lg={5} component={Paper} elevation={6} square>
         <Box
           sx={{
             my: 8,
@@ -86,7 +86,7 @@ export default function SignInSide() {
             }}
           >
             <TextField
-              sx={{ mb: { xs: 2, md: 2 } }}
+              sx={{ mb: { xs: 2, lg: 2 } }}
               margin='normal'
               required
               fullWidth
@@ -97,7 +97,7 @@ export default function SignInSide() {
               autoFocus
             />
             <TextField
-              sx={{ mb: { xs: 2, md: 2 } }}
+              sx={{ mb: { xs: 2, lg: 2 } }}
               margin='normal'
               required
               fullWidth
@@ -108,7 +108,7 @@ export default function SignInSide() {
               autoFocus
             />
             <TextField
-              sx={{ mb: { xs: 2, md: 2 } }}
+              sx={{ mb: { xs: 2, lg: 2 } }}
               margin='normal'
               required
               fullWidth
@@ -119,7 +119,7 @@ export default function SignInSide() {
             />
             <TextField
               fullWidth
-              sx={{ mb: { xs: 2, md: 5 } }}
+              sx={{ mb: { xs: 2, lg: 5 } }}
               id='filled-multiline-static'
               label='Your message'
               multiline

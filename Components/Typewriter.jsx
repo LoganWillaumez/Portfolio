@@ -7,7 +7,7 @@ export const TypewriterEffect = () => {
       sx={{
         width: '100%',
         display: 'flex',
-        gap: { xs: '1rem', md: '2rem', alignItems: 'center' },
+        gap: { xs: '1rem', lg: '2rem', alignItems: 'center' },
       }}
     >
       <Typography

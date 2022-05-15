@@ -61,7 +61,7 @@ export default function App() {
         <Typography
           sx={{
             fontWeight: '300',
-            maxWidth: { xs: '50vh', md: '600px', marginBottom: '4vh' },
+            maxWidth: { xs: '50vh', lg: '600px', marginBottom: '4vh' },
           }}
           component='p'
         >

@@ -17,8 +17,8 @@ export const Header = () => {
         sx={{
           position: 'fixed',
           display: 'flex',
-          bottom: { xs: '1rem', md: 'auto' },
-          top: { xs: 'auto', md: '1rem' },
+          bottom: { xs: '1rem', lg: 'auto' },
+          top: { xs: 'auto', lg: '1rem' },
           left: '50%',
           transform: 'translate(-50%,0 )',
           gap: '4vw',
@@ -37,7 +37,7 @@ export const Header = () => {
                 color: '#FB8402',
                 transform: {
                   xs: 'translateY(-0.5rem)',
-                  md: 'translateY(0.5rem)',
+                  lg: 'translateY(0.5rem)',
                 },
               }),
             }}
@@ -56,7 +56,7 @@ export const Header = () => {
                 color: '#FB8402',
                 transform: {
                   xs: 'translateY(-0.5rem)',
-                  md: 'translateY(0.5rem)',
+                  lg: 'translateY(0.5rem)',
                 },
               }),
             }}
@@ -75,7 +75,7 @@ export const Header = () => {
                 color: '#FB8402',
                 transform: {
                   xs: 'translateY(-0.5rem)',
-                  md: 'translateY(0.5rem)',
+                  lg: 'translateY(0.5rem)',
                 },
               }),
             }}
@@ -94,7 +94,7 @@ export const Header = () => {
                 color: '#FB8402',
                 transform: {
                   xs: 'translateY(-0.5rem)',
-                  md: 'translateY(0.5rem)',
+                  lg: 'translateY(0.5rem)',
                 },
               }),
             }}
