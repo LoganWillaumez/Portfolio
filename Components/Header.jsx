@@ -17,12 +17,15 @@ export const Header = () => {
         sx={{
           position: 'fixed',
           display: 'flex',
-          bottom: { xs: '1rem', lg: 'auto' },
+          // bottom: { xs: '1rem', lg: 'auto' },
+          bottom: '0',
           top: { xs: 'auto', lg: '1rem' },
           left: '50%',
           transform: 'translate(-50%,0 )',
           gap: '4vw',
           justifyContent: 'center',
+          zIndex: '5',
+          height: '5%',
         }}
         component={'header'}
       >

@@ -3,7 +3,7 @@ import Portfolio from '../Components/Portfolio';
 
 const Playground = () => {
   return (
-    <Container>
+    <Container maxWidth={false} sx={{ maxWidth: '1600px' }}>
       <Portfolio />
     </Container>
   );

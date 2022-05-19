@@ -11,7 +11,8 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '80vw',
-  maxWidth: '500px',
+  maxWidth: '1000px',
+  height: '60vh',
   bgcolor: 'background.paper',
   border: '2px solid #000',
   borderRadius: '10px',
@@ -19,6 +20,7 @@ const style = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  border: 'none',
   boxShadow: 24,
   p: 0,
 };
@@ -44,10 +46,15 @@ export default function ModaleFolio({
         aria-describedby='modal-modal-description'
       >
         <Box sx={style}>
-          <img
-            style={{ width: '100%', height: '30vh', objectFit: 'cover' }}
+          <Box
+            component='img'
+            sx={{
+              width: '100%',
+              height: { xs: '30vh', lg: '40vh' },
+              objectFit: 'cover',
+            }}
             src={img}
-          ></img>
+          ></Box>
           <Typography
             sx={{ textAlign: 'center', pt: 2, fontWeight: '600' }}
             id='modal-modal-title'
