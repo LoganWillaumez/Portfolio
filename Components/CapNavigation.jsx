@@ -24,7 +24,13 @@ export default function CapNavigation({ toggleClick }) {
       <BottomNavigation
         showLabels
         value={value}
-        sx={{ borderRadius: '15px', height: '3rem' }}
+        sx={{
+          borderRadius: '15px',
+          height: '3rem',
+          '& .Mui-selected': {
+            color: '#FC8B20',
+          },
+        }}
         onChange={(event, newValue) => {
           setValue(newValue);
           toggleClick(newValue);
