@@ -7,17 +7,27 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Divider } from '@mui/material';
 
-export default function CapNavigation() {
+export default function CapNavigation({ toggleClick }) {
   const [value, setValue] = React.useState(0);
 
   return (
-    <Box sx={{ width: '40vw' }}>
+    <Box
+      sx={{
+        width: '40vw',
+        position: 'fixed',
+        bottom: '10%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: '1',
+      }}
+    >
       <BottomNavigation
         showLabels
         value={value}
-        sx={{ borderRadius: '15px' }}
+        sx={{ borderRadius: '15px', height: '3rem' }}
         onChange={(event, newValue) => {
           setValue(newValue);
+          toggleClick(newValue);
         }}
       >
         <BottomNavigationAction label='3D' />

@@ -1,4 +1,10 @@
-import { Backdrop, ContactShadows, Float } from '@react-three/drei';
+import {
+  Backdrop,
+  ContactShadows,
+  Float,
+  Html,
+  PresentationControls,
+} from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useEffect, useRef } from 'react';
 import { useWindowSize } from 'rooks';
@@ -41,13 +47,15 @@ export const SceneCap = () => {
         floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
         floatingRange={[1, 10]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
       >
-        <group
-          scale={!isNarrowWidth ? innerWidth / innerHeight : 1}
-          position={[0, 0.5, 0]}
-        >
-          <Cap />
-        </group>
-        <ContactShadows position={[0, -0.5, 0]} blur={2} scale={20} far={10} />
+        <PresentationControls cursor={true}>
+          <group
+            scale={!isNarrowWidth ? innerWidth / innerHeight : 1}
+            position={[0, -0.2, 0]}
+          >
+            <Cap />
+          </group>
+        </PresentationControls>
+        <ContactShadows position={[0, -1, 0]} blur={2} scale={20} far={10} />
       </Float>
     </Canvas>
   );

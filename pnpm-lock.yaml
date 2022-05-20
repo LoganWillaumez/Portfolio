@@ -9,6 +9,7 @@ specifiers:
   '@mui/styled-engine-sc': ^5.7.0
   '@react-three/drei': ^9.8.1
   '@react-three/fiber': ^8.0.16
+  animate.css: ^4.1.1
   autoprefixer: ^10.4.7
   eslint: 8.15.0
   eslint-config-next: 12.1.6
@@ -35,6 +36,7 @@ dependencies:
   '@mui/styled-engine-sc': 5.7.0_styled-components@5.3.5
   '@react-three/drei': 9.8.2_xoowdbzemkftjcbbn4yr5k4xpi
   '@react-three/fiber': 8.0.16_5vzz734aui5gu3jm6wlduec5ym
+  animate.css: 4.1.1
   autoprefixer: 10.4.7_postcss@8.4.13
   framer-motion: 6.3.3_ef5jwxihqo6n7gxfmzogljlgcm
   mapbox-gl: 2.8.2
@@ -1063,6 +1065,10 @@ packages:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
     dev: true
+
+  /animate.css/4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
+    dev: false
 
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
