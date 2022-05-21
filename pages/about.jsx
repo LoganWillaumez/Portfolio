@@ -65,7 +65,7 @@ const About = () => {
                 <Box
                   sx={{
                     height: '28vh',
-                    overflow: 'scroll',
+                    overflowY: 'scroll',
                     gap: '1rem',
                     zIndex: '5',
                     float: 'left',
@@ -82,6 +82,9 @@ const About = () => {
                           animationFillMode: 'forwards',
                           display: 'none',
                         }),
+                    '&::-webkit-scrollbar': {
+                      display: 'none',
+                    },
                   }}
                 >
                   <Typography

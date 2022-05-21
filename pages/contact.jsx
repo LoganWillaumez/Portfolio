@@ -29,18 +29,19 @@ export default function SignInSide() {
     isLoading(true);
     emailjs
       //! test
-      // .sendForm(
-      //   'service_k7is6tf',
-      //   'template_fg0d9xo',
-      //   form.current,
-      //   'U_MVcIU1vGyoDpaJI'
-      // )
       .sendForm(
-        'service_7ci87oe',
-        'template_5lbz616',
+        'service_k7is6tf',
+        'template_fg0d9xo',
         form.current,
-        'qXmCiz_N1lOFFnJg8'
+        'U_MVcIU1vGyoDpaJI'
       )
+      //! Real
+      // .sendForm(
+      //   'service_7ci87oe',
+      //   'template_5lbz616',
+      //   form.current,
+      //   'qXmCiz_N1lOFFnJg8'
+      // )
       .then(
         (response) => {
           isLoading(false);
@@ -76,6 +77,9 @@ export default function SignInSide() {
           overflow: 'scroll',
           paddingTop: { xs: '2rem', lg: '0' },
           ' &::-webkit-scrollbar': {
+            display: 'none',
+          },
+          ' &:focus': {
             display: 'none',
           },
         }}
@@ -126,7 +130,25 @@ export default function SignInSide() {
               }}
             >
               <TextField
-                sx={{ mb: { xs: 2, lg: 2 } }}
+                sx={{
+                  mb: { xs: 2, lg: 2 },
+                  input: {
+                    '&:-webkit-autofill': {
+                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
+                      '-webkit-text-fill-color': '#fff',
+                    },
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#808080',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    '&.Mui-focused': {
+                      color: '#FC8B20',
+                    },
+                  },
+                }}
                 margin='normal'
                 required
                 fullWidth
@@ -135,11 +157,32 @@ export default function SignInSide() {
                 id='name'
                 label='Your name'
                 name='from_name'
-                autoComplete='name'
                 autoFocus
+                autoComplete='name'
+                // InputLabelProps={{
+                //   shrink: true,
+                // }}
               />
               <TextField
-                sx={{ mb: { xs: 2, lg: 2 } }}
+                sx={{
+                  mb: { xs: 2, lg: 2 },
+                  input: {
+                    '&:-webkit-autofill': {
+                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
+                      '-webkit-text-fill-color': '#fff',
+                    },
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#808080',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    '&.Mui-focused': {
+                      color: '#FC8B20',
+                    },
+                  },
+                }}
                 margin='normal'
                 required
                 fullWidth
@@ -152,7 +195,30 @@ export default function SignInSide() {
                 autoFocus
               />
               <TextField
-                sx={{ mb: { xs: 2, lg: 2 } }}
+                sx={{
+                  mb: { xs: 2, lg: 2 },
+                  input: {
+                    '&:-webkit-autofill': {
+                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
+                      '-webkit-text-fill-color': '#fff',
+                    },
+                  },
+                  '& .MuiOutlinedInput-root': {
+                    '&.Mui-focused fieldset': {
+                      borderColor: '#808080',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    '&.Mui-focused': {
+                      color: '#FC8B20',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    '&.Mui-focused': {
+                      color: '#FC8B20',
+                    },
+                  },
+                }}
                 margin='normal'
                 required
                 value={subject}
@@ -165,7 +231,25 @@ export default function SignInSide() {
               />
               <TextField
                 fullWidth
-                sx={{ mb: { xs: 2, lg: 5 } }}
+                sx={{
+                  mb: { xs: 2, lg: 2 },
+                  input: {
+                    '&:-webkit-autofill': {
+                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
+                      '-webkit-text-fill-color': '#fff',
+                    },
+                  },
+                  '& .MuiInputLabel-root': {
+                    '&.Mui-focused': {
+                      color: '#FC8B20',
+                    },
+                  },
+                  // '& .MuiOutlinedInput-root': {
+                  //   '&.Mui-focused fieldset': {
+                  //     borderColor: '#FC8B20',
+                  //   },
+                  // },
+                }}
                 id='filled-multiline-static'
                 label='Your message'
                 name='message'
