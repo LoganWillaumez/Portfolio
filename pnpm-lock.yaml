@@ -4,6 +4,7 @@ specifiers:
   '@emotion/react': ^11.9.0
   '@emotion/styled': ^11.8.1
   '@fontsource/roboto': ^4.5.7
+<<<<<<< HEAD
   '@fortawesome/fontawesome-svg-core': ^6.1.1
   '@fortawesome/free-solid-svg-icons': ^6.1.1
   '@fortawesome/react-fontawesome': ^0.1.18
@@ -11,6 +12,11 @@ specifiers:
   '@mui/material': ^5.7.0
   '@mui/styled-engine-sc': ^5.7.0
   '@react-spring/three': ^9.4.5
+=======
+  '@mui/icons-material': ^5.6.2
+  '@mui/material': ^5.7.0
+  '@mui/styled-engine-sc': ^5.7.0
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   '@react-three/drei': ^9.8.1
   '@react-three/fiber': ^8.0.16
   animate.css: ^4.1.1
@@ -21,14 +27,20 @@ specifiers:
   framer-motion: ^6.3.3
   mapbox-gl: ^2.8.2
   next: 12.1.6
+<<<<<<< HEAD
   next-i18next: ^11.0.0
   next-sitemap: ^2.5.25
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   postcss: ^8.4.13
   react: 18.1.0
   react-dom: 18.1.0
   rooks: ^5.11.0
   sass: ^1.51.0
+<<<<<<< HEAD
   sitemap: ^7.1.1
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   styled-components: ^5.3.5
   tailwindcss: ^3.0.24
   three: ^0.140.2
@@ -39,6 +51,7 @@ dependencies:
   '@emotion/react': 11.9.0_react@18.1.0
   '@emotion/styled': 11.8.1_btguaf77hpuxici4esujjeifki
   '@fontsource/roboto': 4.5.7
+<<<<<<< HEAD
   '@fortawesome/fontawesome-svg-core': 6.1.1
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@fortawesome/react-fontawesome': 0.1.18_hjfkmtq3pe7bdfmd7inrupgslm
@@ -46,6 +59,11 @@ dependencies:
   '@mui/material': 5.7.0_gqsuqdqel52o6agzkiicszkmha
   '@mui/styled-engine-sc': 5.7.0_styled-components@5.3.5
   '@react-spring/three': 9.4.5_ccau7tgitds6p5bkkj6mrhqn3m
+=======
+  '@mui/icons-material': 5.6.2_leae5g5hgnak53lajhuhjbnueq
+  '@mui/material': 5.7.0_gqsuqdqel52o6agzkiicszkmha
+  '@mui/styled-engine-sc': 5.7.0_styled-components@5.3.5
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   '@react-three/drei': 9.8.2_xoowdbzemkftjcbbn4yr5k4xpi
   '@react-three/fiber': 8.0.16_5vzz734aui5gu3jm6wlduec5ym
   animate.css: 4.1.1
@@ -54,14 +72,20 @@ dependencies:
   framer-motion: 6.3.3_ef5jwxihqo6n7gxfmzogljlgcm
   mapbox-gl: 2.8.2
   next: 12.1.6_achxnsjje7b5gy3iikucscdeta
+<<<<<<< HEAD
   next-i18next: 11.0.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   next-sitemap: 2.5.25_next@12.1.6
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   postcss: 8.4.13
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   rooks: 5.11.0_ef5jwxihqo6n7gxfmzogljlgcm
   sass: 1.51.0
+<<<<<<< HEAD
   sitemap: 7.1.1
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   styled-components: 5.3.5_ef5jwxihqo6n7gxfmzogljlgcm
   tailwindcss: 3.0.24
   three: 0.140.2
@@ -241,10 +265,13 @@ packages:
     resolution: {integrity: sha512-bbZIpW6fdyf7FMaeDmw3cBbkTqsecxEkwlVKgVfqqXWBPLH6azxhPA2V9F7OhoZSVrsnMYw7QuyK6qutXPjEew==}
     dev: false
 
+<<<<<<< HEAD
   /@corex/deepmerge/2.6.148:
     resolution: {integrity: sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA==}
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /@emotion/babel-plugin/11.9.2:
     resolution: {integrity: sha512-Pr/7HGH6H6yKgnVFNEj2MVlreu3ADqftqjqwUvDy/OJzKFgxKeTQ+eeUf20FOTuHVkDON2iNa25rAXVYtWJCjw==}
     peerDependencies:
@@ -396,6 +423,7 @@ packages:
     resolution: {integrity: sha512-m57UMER23Mk6Drg9OjtHW1Y+0KPGyZfE5XJoPTOsLARLar6013kJj4X2HICt+iFLJqIgTahA/QAvSn9lwF1EEw==}
     dev: false
 
+<<<<<<< HEAD
   /@fortawesome/fontawesome-common-types/6.1.1:
     resolution: {integrity: sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==}
     engines: {node: '>=6'}
@@ -429,6 +457,8 @@ packages:
       react: 18.1.0
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
     engines: {node: '>=10.10.0'}
@@ -969,10 +999,13 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+<<<<<<< HEAD
   /@types/node/17.0.35:
     resolution: {integrity: sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==}
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: false
@@ -1007,12 +1040,15 @@ packages:
       csstype: 3.0.11
     dev: false
 
+<<<<<<< HEAD
   /@types/sax/1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
       '@types/node': 17.0.35
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: false
@@ -1420,11 +1456,14 @@ packages:
     requiresBuild: true
     dev: true
 
+<<<<<<< HEAD
   /core-js/3.22.6:
     resolution: {integrity: sha512-2IGcGH00z9I4twgNWU4uGCNEsBFG1s2JudVQrgSCoVhOfwoTwQjxC8aMo9exrpTMOxvobggEpaHnGMmQY4cfBQ==}
     requiresBuild: true
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /cosmiconfig/6.0.0:
     resolution: {integrity: sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg==}
     engines: {node: '>=8'}
@@ -2220,6 +2259,7 @@ packages:
       react-is: 16.13.1
     dev: false
 
+<<<<<<< HEAD
   /html-escaper/2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
     dev: false
@@ -2240,6 +2280,8 @@ packages:
       '@babel/runtime': 7.17.9
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
@@ -2595,6 +2637,7 @@ packages:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
 
+<<<<<<< HEAD
   /next-i18next/11.0.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
     resolution: {integrity: sha512-phxbQiZGSJTTBE2FI4+BnqFZl88AI2V+6MrEQnT9aPFAXq/fATQ/F0pOUM3J7kU4nEeCfn3hjISq+ygGHlEz0g==}
     engines: {node: '>=12'}
@@ -2628,6 +2671,8 @@ packages:
       next: 12.1.6_achxnsjje7b5gy3iikucscdeta
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /next/12.1.6_achxnsjje7b5gy3iikucscdeta:
     resolution: {integrity: sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A==}
     engines: {node: '>=12.22.0'}
@@ -3169,10 +3214,13 @@ packages:
       source-map-js: 1.0.2
     dev: false
 
+<<<<<<< HEAD
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /scheduler/0.21.0:
     resolution: {integrity: sha512-1r87x5fz9MXqswA2ERLo0EbOAU74DpIUO090gIasYTqlVoJeMcl+Z1Rg7WHz+qtPujhS/hGIt9kxZOYBV3faRQ==}
     dependencies:
@@ -3617,11 +3665,14 @@ packages:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
 
+<<<<<<< HEAD
   /void-elements/3.1.0:
     resolution: {integrity: sha1-YU9/v42AHwu18GYfWy9XhXUOTwk=}
     engines: {node: '>=0.10.0'}
     dev: false
 
+=======
+>>>>>>> 192898c ([MERGE](page-structure): add structure page)
   /vt-pbf/3.1.3:
     resolution: {integrity: sha512-2LzDFzt0mZKZ9IpVF2r69G9bXaP2Q2sArJCmcCgvfTdCCZzSyz4aCLoQyUilu37Ll56tCblIZrXFIjNUpGIlmA==}
     dependencies:
