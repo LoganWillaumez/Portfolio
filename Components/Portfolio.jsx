@@ -20,6 +20,9 @@ export default function TitlebarImageList() {
         width: '100%',
         height: { xs: '85vh', lg: '90vh' },
         paddingTop: '10%',
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
       }}
     >
       <ImageListItem key='Subheader' cols={2}>
@@ -32,6 +35,11 @@ export default function TitlebarImageList() {
       </ImageListItem>
       {itelgata.map((item, i) => (
         <ImageListItem
+          sx={{
+            '&:hover': {
+              cursor: 'pointer',
+            },
+          }}
           key={item.img}
           onClick={(e) => {
             toggleOpen();
