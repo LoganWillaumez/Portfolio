@@ -81,6 +81,7 @@ const About = () => {
                   textAlign: 'justify',
                   marginBottom: '1rem',
                   fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
+                  fontWeight: '300',
                 }}
               >
                 Adorant les métier de passions, le domaine de la 3D m'a très
@@ -92,6 +93,7 @@ const About = () => {
                 sx={{
                   textAlign: 'justify',
                   fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
+                  fontWeight: '300',
                 }}
               >
                 Au fil du temps, et même si la 3D continuais de me passionner,
@@ -130,6 +132,7 @@ const About = () => {
                   textAlign: 'justify',
                   marginBottom: '1rem',
                   fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
+                  fontWeight: '300',
                 }}
               >
                 Après plusieurs recherches, je suis donc partis vers le métier
@@ -141,7 +144,10 @@ const About = () => {
               <Typography
                 sx={{
                   textAlign: 'justify',
-                  fontSize: { lg: 'calc(0.9vw + 1vh * 0.1)' },
+                  fontSize: {
+                    lg: 'calc(0.9vw + 1vh * 0.1)',
+                    fontWeight: '300',
+                  },
                 }}
               >
                 Me spécialisant dans React et ses facettes, le back-end ne me
