@@ -10,6 +10,11 @@ export const Header = () => {
     <>
       <Head>
         <title>Logan Willaumez Portfolio</title>
+        <meta charset='utf-8' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0, viewport-fit=cover'
+        />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
       </Head>
 
@@ -25,7 +30,7 @@ export const Header = () => {
           transform: 'translate(-50%,0 )',
           gap: '4vw',
           justifyContent: 'center',
-          zIndex: '5',
+          zIndex: '11',
           height: '5%',
           '@media (orientation : landscape)': {},
         }}

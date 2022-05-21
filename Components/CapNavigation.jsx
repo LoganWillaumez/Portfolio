@@ -19,7 +19,7 @@ export default function CapNavigation({ toggleClick }) {
         bottom: '10%',
         left: '50%',
         transform: 'translateX(-50%)',
-        zIndex: '1',
+        zIndex: '11',
         ...(landscape && {
           bottom: '8%',
         }),

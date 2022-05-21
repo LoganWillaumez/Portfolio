@@ -123,6 +123,9 @@ const About = () => {
                     float: 'left',
                     gap: '1rem',
                     opacity: '0',
+                    '&::-webkit-scrollbar': {
+                      display: 'none',
+                    },
                     ...(click === 'Dev'
                       ? {
                           display: 'block',

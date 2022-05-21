@@ -34,7 +34,7 @@ export const SceneCap = () => {
         style={{
           height: '100vh',
           width: '100vw',
-          zIndex: '1',
+          zIndex: '10',
         }}
         legacy={true}
       >
@@ -47,7 +47,7 @@ export const SceneCap = () => {
           floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
           floatingRange={[1, 10]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
         >
-          <PresentationControls cursor={true}>
+          <PresentationControls global>
             <group
               scale={!isNarrowWidth ? innerWidth / innerHeight : 0.8}
               position={[0, -0.2, 0]}
@@ -55,7 +55,12 @@ export const SceneCap = () => {
               <Cap />
             </group>
           </PresentationControls>
-          <ContactShadows position={[0, -1, 0]} blur={2} scale={20} far={10} />
+          <ContactShadows
+            position={[0, -1.5, 0]}
+            blur={2}
+            scale={20}
+            far={10}
+          />
         </Float>
       </Canvas>
       <Loader />
