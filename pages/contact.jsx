@@ -28,19 +28,19 @@ export default function SignInSide() {
     e.preventDefault();
     isLoading(true);
     emailjs
-      .sendForm(
-        'service_k7is6tf',
-        'template_fg0d9xo',
-        form.current,
-        'U_MVcIU1vGyoDpaJI'
-      )
-      //! after test
+      //! test
       // .sendForm(
-      //   'service_7ci87oe',
-      //   'template_5lbz616',
+      //   'service_k7is6tf',
+      //   'template_fg0d9xo',
       //   form.current,
-      //   'qXmCiz_N1lOFFnJg8'
+      //   'U_MVcIU1vGyoDpaJI'
       // )
+      .sendForm(
+        'service_7ci87oe',
+        'template_5lbz616',
+        form.current,
+        'qXmCiz_N1lOFFnJg8'
+      )
       .then(
         (response) => {
           isLoading(false);
