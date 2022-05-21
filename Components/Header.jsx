@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Linkmui from '@mui/material/Link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { useMediaMatch } from 'rooks';
 export const Header = () => {
   const { pathname } = useRouter();
   return (
@@ -26,6 +27,7 @@ export const Header = () => {
           justifyContent: 'center',
           zIndex: '5',
           height: '5%',
+          '@media (orientation : landscape)': {},
         }}
         component={'header'}
       >

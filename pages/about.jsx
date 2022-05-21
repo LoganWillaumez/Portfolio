@@ -7,12 +7,13 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import IconButton from '@mui/material/IconButton';
 import 'animate.css';
+import { useMediaMatch } from 'rooks';
 const About = () => {
   const [click, setClick] = useState('3D');
+  const landscape = useMediaMatch('(orientation: landscape)');
   const toggleClick = (value) => {
     setClick(value === 0 ? '3D' : 'Dev');
   };
-  console.log(`🚀 ~ click`, click);
   return (
     <>
       <Container maxWidth={false} disableGutters sx={{ height: '92%' }}>
@@ -43,12 +44,14 @@ const About = () => {
           </Typography>
           <Box
             sx={{
-              height: '50vh',
+              height: '40vh',
               // backgroundColor: 'red',
               width: '90%',
               position: 'relative',
               display: 'flex',
               flexDirection: 'column',
+              gap: '1rem',
+              maxWidth: { lg: '800px', xl: '1000px' },
             }}
           >
             <Box
@@ -76,6 +79,8 @@ const About = () => {
               <Typography
                 sx={{
                   textAlign: 'justify',
+                  marginBottom: '1rem',
+                  fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
                 }}
               >
                 Adorant les métier de passions, le domaine de la 3D m'a très
@@ -83,7 +88,12 @@ const About = () => {
                 qu'environnement artiste, j'ai pu trouver un travail dans une
                 boîte spécialisée dans la simulation 3D ferroviaire.
               </Typography>
-              <Typography sx={{ textAlign: 'justify' }}>
+              <Typography
+                sx={{
+                  textAlign: 'justify',
+                  fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
+                }}
+              >
                 Au fil du temps, et même si la 3D continuais de me passionner,
                 je m'essayais toujours plus aux côté techniques de ce métier (C#
                 sous unity, du Vex sur Houdini,...), mais je voulais pouvoir me
@@ -118,6 +128,8 @@ const About = () => {
               <Typography
                 sx={{
                   textAlign: 'justify',
+                  marginBottom: '1rem',
+                  fontSize: { lg: 'calc(0.9vw + 1vh *0.1)' },
                 }}
               >
                 Après plusieurs recherches, je suis donc partis vers le métier
@@ -126,7 +138,12 @@ const About = () => {
                 appris énormément de technologies,et surtout comment
                 fonctionnait contrètement le métier de développeur
               </Typography>
-              <Typography sx={{ textAlign: 'justify' }}>
+              <Typography
+                sx={{
+                  textAlign: 'justify',
+                  fontSize: { lg: 'calc(0.9vw + 1vh * 0.1)' },
+                }}
+              >
                 Me spécialisant dans React et ses facettes, le back-end ne me
                 laisse pas dutout indiférent. Je compte bien continuer à avancer
                 dans tous les aspects du développement Web, front ou back pour

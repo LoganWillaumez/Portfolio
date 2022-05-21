@@ -24,7 +24,7 @@ export const Box = () => {
   );
 };
 export const SceneCap = () => {
-  const isNarrowWidth = useMediaMatch('(min-width: 1000px)');
+  const isNarrowWidth = useMediaMatch('(orientation: landscape)');
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
 
   return (
@@ -49,7 +49,7 @@ export const SceneCap = () => {
       >
         <PresentationControls cursor={true}>
           <group
-            scale={!isNarrowWidth ? innerWidth / innerHeight : 1}
+            scale={!isNarrowWidth ? innerWidth / innerHeight : 0.8}
             position={[0, -0.2, 0]}
           >
             <Cap />
