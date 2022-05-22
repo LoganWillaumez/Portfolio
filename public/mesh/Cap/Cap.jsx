@@ -43,13 +43,13 @@ export default function Model({ ...props }) {
         ref={mesh}
         scale={scale}
         geometry={nodes.CapCaplowpolyFinal.geometry}
-        material={materials.lambert1}
+        material={materials.VsCode}
       />
       <animated.mesh
         ref={mesh}
         scale={scaleReverse}
         geometry={nodes.CapCaplowpolyFinal.geometry}
-        material={materials.lambert1}
+        material={materials.Blender}
       />
     </group>
   );
