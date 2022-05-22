@@ -9,18 +9,7 @@ import { useFrame } from '@react-three/fiber';
 export default function Model({ ...props }) {
   const { scale } = useSpring({
     scale: props.active ? 1 : 0,
-    config: {
-      ...config.wobbly,
-    },
-    immediate: props.active ? false : true,
-  });
-  const { scale: scaleReverse } = useSpring({
-    scale: !props.active ? 1 : 0,
-    config: {
-      ...config.wobbly,
-      // duration: !props.active ? 450 : 0,
-    },
-    immediate: !props.active ? false : true,
+    config: config.wobbly,
   });
   const group = useRef();
   const mesh = useRef();
@@ -42,12 +31,6 @@ export default function Model({ ...props }) {
       <animated.mesh
         ref={mesh}
         scale={scale}
-        geometry={nodes.CapCaplowpolyFinal.geometry}
-        material={materials.lambert1}
-      />
-      <animated.mesh
-        ref={mesh}
-        scale={scaleReverse}
         geometry={nodes.CapCaplowpolyFinal.geometry}
         material={materials.lambert1}
       />
