@@ -8,7 +8,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Divider } from '@mui/material';
 import { useMediaMatch } from 'rooks';
 
-export default function CapNavigation({ toggleClick }) {
+export default function CapNavigation({ toggleClick, active, setActive }) {
   const [value, setValue] = React.useState(0);
   const landscape = useMediaMatch('(orientation: landscape)');
   return (
@@ -38,6 +38,7 @@ export default function CapNavigation({ toggleClick }) {
         onChange={(event, newValue) => {
           setValue(newValue);
           toggleClick(newValue);
+          setActive(!active);
         }}
       >
         <BottomNavigationAction label='3D' sx={{ fontWeight: '700' }} />

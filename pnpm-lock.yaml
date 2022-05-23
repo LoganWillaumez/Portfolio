@@ -7,6 +7,7 @@ specifiers:
   '@mui/icons-material': ^5.6.2
   '@mui/material': ^5.7.0
   '@mui/styled-engine-sc': ^5.7.0
+  '@react-spring/three': ^9.4.5
   '@react-three/drei': ^9.8.1
   '@react-three/fiber': ^8.0.16
   animate.css: ^4.1.1
@@ -35,6 +36,7 @@ dependencies:
   '@mui/icons-material': 5.6.2_leae5g5hgnak53lajhuhjbnueq
   '@mui/material': 5.7.0_gqsuqdqel52o6agzkiicszkmha
   '@mui/styled-engine-sc': 5.7.0_styled-components@5.3.5
+  '@react-spring/three': 9.4.5_ccau7tgitds6p5bkkj6mrhqn3m
   '@react-three/drei': 9.8.2_xoowdbzemkftjcbbn4yr5k4xpi
   '@react-three/fiber': 8.0.16_5vzz734aui5gu3jm6wlduec5ym
   animate.css: 4.1.1

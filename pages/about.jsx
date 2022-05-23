@@ -11,6 +11,7 @@ import { useMediaMatch } from 'rooks';
 import { Loader, useProgress } from '@react-three/drei';
 const About = () => {
   // Fix the problem of hydratation
+  const [active, setActive] = useState(false);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -123,6 +124,9 @@ const About = () => {
                     float: 'left',
                     gap: '1rem',
                     opacity: '0',
+                    '&::-webkit-scrollbar': {
+                      display: 'none',
+                    },
                     ...(click === 'Dev'
                       ? {
                           display: 'block',
@@ -179,11 +183,15 @@ const About = () => {
           Let's combine the two world together.
         </Typography> */}
             </Box>
-            <SceneCap />
+            <SceneCap active={active} />
           </Container>
         )}
       </Suspense>
-      <CapNavigation toggleClick={toggleClick} />
+      <CapNavigation
+        toggleClick={toggleClick}
+        active={active}
+        setActive={setActive}
+      />
       {/* <IconButton
         sx={{
           position: 'fixed',

@@ -8,8 +8,8 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { useWindowSize } from 'rooks';
 import Cap from '../public/mesh/Cap/Cap';
+import CapVsCode from '../public/mesh/Cap/CapVsCode';
 import { useMediaMatch } from 'rooks';
-
 export const Box = () => {
   const boxRef = useRef();
   useFrame(() => {
@@ -23,7 +23,7 @@ export const Box = () => {
     </mesh>
   );
 };
-export const SceneCap = () => {
+export const SceneCap = ({ active }) => {
   const isNarrowWidth = useMediaMatch('(orientation: landscape)');
   const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
   return (
@@ -49,13 +49,22 @@ export const SceneCap = () => {
         >
           <PresentationControls cursor={true}>
             <group
+              opacity='0.1'
+              transparent={true}
+              className='blender'
               scale={!isNarrowWidth ? innerWidth / innerHeight : 0.8}
               position={[0, -0.2, 0]}
             >
-              <Cap />
+              <Cap active={active} />
+              {/* <CapVsCode active={active} /> */}
             </group>
           </PresentationControls>
-          <ContactShadows position={[0, -1, 0]} blur={2} scale={20} far={10} />
+          <ContactShadows
+            position={[0, -1.5, 0]}
+            blur={2}
+            scale={20}
+            far={10}
+          />
         </Float>
       </Canvas>
       <Loader />
