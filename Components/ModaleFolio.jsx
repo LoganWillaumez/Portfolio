@@ -50,22 +50,40 @@ export default function ModaleFolio({
             component='img'
             sx={{
               width: '100%',
-              height: { xs: '30vh', lg: '40vh' },
+              // height: { xs: '30vh', lg: '40vh' },
+              height: '30vh',
               objectFit: 'cover',
             }}
             src={img}
           ></Box>
           <Typography
-            sx={{ textAlign: 'center', pt: 2, fontWeight: '600' }}
+            sx={{
+              textAlign: 'center',
+              pt: 2,
+              fontWeight: '600',
+              fontSize: { xs: 'calc(1vw + 1vh + 1vmin)', lg: '2rem' },
+            }}
             id='modal-modal-title'
-            variant='h6'
             component='h2'
           >
             {title}
           </Typography>
           <Typography
             id='modal-modal-description'
-            sx={{ mt: 2, pr: 3, pl: 5, pb: 2 }}
+            sx={{
+              mt: 2,
+              pr: 3,
+              pl: 5,
+              pb: 2,
+              maxWidth: '600px',
+              fontSize: {
+                xs: 'calc(1vw + 1vh + 0.5vmin)',
+                md: 'calc(1vw + 1vh + 0.1vmin)',
+                lg: '1.5rem',
+              },
+              textAlign: 'justify',
+              fontWeight: '300',
+            }}
           >
             {desc}
           </Typography>
@@ -76,6 +94,8 @@ export default function ModaleFolio({
               margin: '0 auto',
               paddingBottom: '1rem',
               color: 'white',
+              bottom: '0',
+              position: 'absolute',
             }}
             href={url}
             rel='noopener noreferrer'

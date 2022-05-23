@@ -74,11 +74,12 @@ const itelgata = [
   {
     img: 'https://user-images.githubusercontent.com/60406970/168473161-680a96fc-2cd3-4323-b6a9-8f07cc194987.png',
     title: 'Lusco',
-    desc: 'Project made for training about query and tailwindcss. Really fun to do ! ',
+    desc: 'A project that aims to clone google. I wanted to recreate the design in my own way, mainly to learn tailwind.',
     url: 'https://github.com/LoganWillaumez/Lusco',
     rows: 2,
     cols: 2,
     featured: true,
+    icon: [],
   },
   {
     img: 'https://user-images.githubusercontent.com/60406970/168473609-d7a7a30d-6694-486f-b655-e54099a9265d.png',
