@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Linkmui from '@mui/material/Link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { useMediaMatch } from 'rooks';
+import { faReact } from '@fortawesome/free-solid-svg-icons';
 export const Header = () => {
   const { pathname } = useRouter();
   return (

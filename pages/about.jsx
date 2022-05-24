@@ -96,10 +96,10 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    Adorant les métier de passions, le domaine de la 3D m'a très
-                    vite conquis. Après des études dans le domaine en tant
-                    qu'environnement artiste, j'ai pu trouver un travail dans
-                    une boîte spécialisée dans la simulation 3D ferroviaire.
+                    My love for the profession of passions lead me to the field
+                    of 3D. After studying as an artist environment, I was able
+                    to find a job at a company specializing in 3D railway
+                    simulations.
                   </Typography>
                   <Typography
                     sx={{
@@ -108,11 +108,11 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    Au fil du temps, et même si la 3D continuais de me
-                    passionner, je m'essayais toujours plus aux côté techniques
-                    de ce métier (C# sous unity, du Vex sur Houdini,...), mais
-                    je voulais pouvoir me détacher de ce milieu tout en
-                    bifurquant petit à petit vers le métier de développeur.
+                    Event though I continued to be fascinated by 3D, I also
+                    tried my hands at the technical side of this profession(C#
+                    under Unity, Vex,...) but It was not enough, and I became
+                    more and more passionate about web development as I
+                    discovered it.
                   </Typography>
                 </Box>
                 <Box
@@ -150,12 +150,11 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    Après plusieurs recherches, je suis donc partis vers le
-                    métier de développeur web. Et ce fut le bon choix ! Partis
-                    de mon travail, j'ai continué mon chemin vers l'école
-                    O'clock, où j'ai appris énormément de technologies,et
-                    surtout comment fonctionnait contrètement le métier de
-                    développeur
+                    After considering it for a while, I decided to quit my job
+                    and pursue my passion. And it was the right decision ! Then
+                    continued my way to the O'clock school, where I learned the
+                    foundations of the web development field. It was a rewarding
+                    experience that comforted me in my decision.
                   </Typography>
                   <Typography
                     sx={{
@@ -166,11 +165,10 @@ const About = () => {
                       },
                     }}
                   >
-                    Me spécialisant dans React et ses facettes, le back-end ne
-                    me laisse pas dutout indiférent. Je compte bien continuer à
-                    avancer dans tous les aspects du développement Web, front ou
-                    back pour pouvoir, je l'espère, un jour me prétendre full
-                    stack.
+                    Although I specialise in React and its facets, the back-end
+                    does not leave me uninterested. I intend to advance in all
+                    aspects of web development, front and back, to one day be
+                    able to claim to be a full stack developer..
                   </Typography>
                 </Box>
               </Box>
