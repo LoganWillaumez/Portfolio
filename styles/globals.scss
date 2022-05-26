@@ -1,0 +1,15 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+.Typewriter__wrapper {
+  white-space: nowrap;
+}

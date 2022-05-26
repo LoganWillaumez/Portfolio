@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+This is my Portfolio. For this project, I tried to incorporate what represents me.
 
-First, run the development server:
+As a learning opportunity, I used Next.js (really impressive to play with).
+
+Three.js (using threefiber) was added to the about page. It was my intention to show my "before and after" Web development discovery, and why I wanted to change.
+
+Feel free to contact me via the form.
+
+## Stack
+
+- Next.js
+- MUI
+- Three.js/ThreeFiber.js
+
+## Install
+
+Prerequisites: Make sure you've installed Node.js ≥ 12
+
+1. Install dependencies :
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn
+or
+npm i
+or
+pnpm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Configure .env.local
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+It used EmailJS. Feel free to check with your own variables.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```env
+NEXT_PUBLIC_SERVICE=YOUR_SERVICE_ID
+NEXT_PUBLIC_TEMPLATE=YOUR_TEMPLATE
+NEXT_PUBLIC_PUBLICKEY=YOUR_PUBLICKEY
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. To launch locally :
 
-## Learn More
+```bash
+yarn dev
+or
+npm run dev
+or
+pnpm dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Know Issues
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Some improve need to be done, a more animation to the page change (it is in preparation).
+More feedback on the loaded elements (like images), even if it's quick with Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Missing features
 
-## Deploy on Vercel
+Missing some dynamic elements to the background.
+Missing animated page change.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://temp-folio-loganwillaumez.vercel.app
