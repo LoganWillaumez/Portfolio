@@ -2,12 +2,10 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
 import { useState } from 'react';
 import ModaleFolio from './ModaleFolio';
 import { Typography } from '@mui/material';
+import Image from 'next/image';
 
 export default function TitlebarImageList({ projectData }) {
   const [open, setOpen] = useState(false);
@@ -31,14 +29,6 @@ export default function TitlebarImageList({ projectData }) {
         }}
         cols={2}
       >
-        {/* <ImageListItem key='Subheader' cols={0}>
-        <ListSubheader
-          sx={{ fontSize: '2rem', fontWeight: '700' }}
-          component='div'
-        >
-          Portfolio
-        </ListSubheader>
-      </ImageListItem> */}
         {projectData.map((item, i) => (
           <ImageListItem
             sx={{ aspectRatio: '16/9' }}
@@ -49,24 +39,14 @@ export default function TitlebarImageList({ projectData }) {
             }}
           >
             <img
+              layout='fill'
               style={{ objectFit: 'cover', height: '20vh' }}
               src={`${item.img}?w=248&fit=crop&auto=format`}
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
               alt={item.title}
               loading='lazy'
             />
-            <ImageListItemBar
-              title={item.title}
-              // subtitle={item.author}
-              // actionIcon={
-              //   <IconButton
-              //     sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-              //     aria-label={`info about ${item.title}`}
-              //   >
-              //     <InfoIcon />
-              //   </IconButton>
-              // }
-            />
+            <ImageListItemBar title={item.title} />
           </ImageListItem>
         ))}
         <ModaleFolio

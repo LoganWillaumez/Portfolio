@@ -39,6 +39,7 @@ export default function App({ locale }) {
         height: '100%',
         width: '100%',
         maxWidth: '1400px !important',
+        padding: '5rem',
       }}
     >
       <Container

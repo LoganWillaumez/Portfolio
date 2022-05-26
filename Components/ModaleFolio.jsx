@@ -1,11 +1,8 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { flexbox } from '.pnpm/@mui+system@5.7.0_t4r7icl7x3elshpaxc4xm7jrem/node_modules/@mui/system';
 import Image from 'next/image';
-import { Divider } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -36,10 +33,6 @@ export default function ModaleFolio({
   url,
   icon,
 }) {
-  //   const [open, setOpen] = React.useState(false);
-  //   const handleOpen = () => setOpen(true);
-  //   const handleClose = () => setOpen(false);
-
   return (
     <div>
       <Modal
@@ -54,7 +47,6 @@ export default function ModaleFolio({
               component='img'
               sx={{
                 width: '100%',
-                // height: { xs: '30vh', lg: '40vh' },
                 height: '30vh',
                 objectFit: 'cover',
               }}
@@ -105,9 +97,6 @@ export default function ModaleFolio({
               </Typography>
               <Box
                 sx={{
-                  // height: '20px',
-                  // width: '100px',
-                  // backgroundColor: 'red',
                   display: 'flex',
                   alignItems: 'center',
                   gap: '1rem',

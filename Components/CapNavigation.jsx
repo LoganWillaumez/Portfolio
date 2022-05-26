@@ -2,9 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Divider } from '@mui/material';
 import { useMediaMatch } from 'rooks';
 
@@ -41,8 +38,10 @@ export default function CapNavigation({ toggleClick, active, setActive }) {
           setActive(!active);
         }}
       >
-        <BottomNavigationAction label='3D' sx={{ fontWeight: '700' }} />
-        <Divider orientation='vertical' />
+        <BottomNavigationAction
+          label='3D'
+          sx={{ fontWeight: '700', borderRight: '1px solid #4C4C4D' }}
+        />
         <BottomNavigationAction label='Web' sx={{ fontWeight: '700' }} />
       </BottomNavigation>
     </Box>

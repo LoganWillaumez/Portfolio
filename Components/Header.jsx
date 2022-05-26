@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Linkmui from '@mui/material/Link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { faReact } from '@fortawesome/free-solid-svg-icons';
 export const Header = () => {
   const { pathname } = useRouter();
   return (
@@ -18,7 +17,6 @@ export const Header = () => {
         sx={{
           position: 'fixed',
           display: 'flex',
-          // bottom: { xs: '1rem', lg: 'auto' },
           bottom: '0',
           top: { xs: 'auto', lg: '1rem' },
           left: '50%',

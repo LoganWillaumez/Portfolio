@@ -147,8 +147,8 @@ export default function SignInSide({ locale }) {
                   mb: { xs: 2, lg: 2 },
                   input: {
                     '&:-webkit-autofill': {
-                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
-                      '-webkit-text-fill-color': '#fff',
+                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                      WebkitTextFillColor: '#fff',
                     },
                   },
                   '& .MuiOutlinedInput-root': {
@@ -181,8 +181,8 @@ export default function SignInSide({ locale }) {
                   mb: { xs: 2, lg: 2 },
                   input: {
                     '&:-webkit-autofill': {
-                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
-                      '-webkit-text-fill-color': '#fff',
+                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                      WebkitTextFillColor: '#fff',
                     },
                   },
                   '& .MuiOutlinedInput-root': {
@@ -212,8 +212,8 @@ export default function SignInSide({ locale }) {
                   mb: { xs: 2, lg: 2 },
                   input: {
                     '&:-webkit-autofill': {
-                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
-                      '-webkit-text-fill-color': '#fff',
+                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                      WebkitTextFillColor: '#fff',
                     },
                   },
                   '& .MuiOutlinedInput-root': {
@@ -248,8 +248,8 @@ export default function SignInSide({ locale }) {
                   mb: { xs: 2, lg: 2 },
                   input: {
                     '&:-webkit-autofill': {
-                      '-webkit-box-shadow': '0 0 0 100px #333233 inset',
-                      '-webkit-text-fill-color': '#fff',
+                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                      WebkitTextFillColor: '#fff',
                     },
                   },
                   '& .MuiInputLabel-root': {

@@ -5,10 +5,9 @@ import {
   PresentationControls,
 } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { useWindowSize } from 'rooks';
 import Cap from '../public/mesh/Cap/Cap';
-import CapVsCode from '../public/mesh/Cap/CapVsCode';
 import { useMediaMatch } from 'rooks';
 export const Box = () => {
   const boxRef = useRef();
@@ -56,7 +55,6 @@ export const SceneCap = ({ active }) => {
               position={[0, -0.2, 0]}
             >
               <Cap active={active} />
-              {/* <CapVsCode active={active} /> */}
             </group>
           </PresentationControls>
           <ContactShadows

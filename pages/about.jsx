@@ -1,6 +1,5 @@
 import { Box, Container, Divider, Typography } from '@mui/material';
 import CapNavigation from '../Components/CapNavigation';
-import { Scene } from '../Components/Scene';
 import { SceneCap } from '../Components/SceneCap';
 import { Suspense, useEffect, useState } from 'react';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
@@ -171,14 +170,6 @@ const About = () => {
                   </Typography>
                 </Box>
               </Box>
-              {/* <Divider /> */}
-              {/* <Typography
-          sx={{
-            fontSize: 'calc(1vw + 1vh + 1vmin)',
-          }}
-        >
-          Let's combine the two world together.
-        </Typography> */}
             </Box>
             <SceneCap active={active} />
           </Container>

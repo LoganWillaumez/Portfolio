@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Footer } from './Footer';
 import { Header } from './Header';
 import { MenuSocial } from './MenuSocial';
 export function getStaticProps({ locale }) {

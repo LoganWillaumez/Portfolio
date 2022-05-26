@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 
@@ -29,10 +28,6 @@ export default function EmailSnackbar({ setSuccess, success, open, setOpen }) {
             : 'An error occur, please retry'}
         </Alert>
       </Snackbar>
-      {/* <Alert severity={severity}>This is an error message!</Alert> */}
-      {/* <Alert severity='warning'>This is a warning message!</Alert>
-      <Alert severity='info'>This is an information message!</Alert> */}
-      {/* <Alert severity='success'>This is a success message!</Alert> */}
     </Stack>
   );
 }
