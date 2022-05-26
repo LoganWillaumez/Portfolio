@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { Paper } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -6,7 +6,20 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import ListIcon from '@mui/icons-material/List';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'react-i18next';
 export const MenuSocial = ({ open, openTrue, openFalse }) => {
+  const { locale } = useRouter();
+  const router = useRouter();
+  /**
+   * Change language of the site (toggle)
+   */
+  const changeLanguageHandler = () => {
+    router.push(router.asPath, undefined, {
+      locale: locale === 'en' ? 'fr' : 'en',
+    });
+  };
+
   return (
     <>
       <ClickAwayListener onClickAway={openFalse}>
@@ -15,7 +28,7 @@ export const MenuSocial = ({ open, openTrue, openFalse }) => {
           onClick={() => openTrue()}
           sx={{
             width: '80px',
-            height: '250px',
+            height: '300px',
             position: 'fixed',
             left: { xs: '-40px', lg: '-5px' }, //-5 ok
             top: { xs: '15%', lg: '40%' },
@@ -27,15 +40,15 @@ export const MenuSocial = ({ open, openTrue, openFalse }) => {
             transformOrigin: 'left top',
             transform: { xs: 'scaleY(0.2)', lg: 'scaleY(1)' },
             ...(open && {
-              transform: 'scale(1)',
-              transform: 'translateX(35px)',
+              transform: { xs: 'scale(1)' },
+              transform: { xs: 'translateX(35px)', lg: 'translateX(0)' },
             }),
           }}
         >
           <Box
             height={'100%'}
             sx={{
-              padding: '2rem 0 2rem 0',
+              padding: '0rem 0 0rem 0',
               display: 'flex',
               flexDirection: 'column',
               gap: '1.5rem',
@@ -82,6 +95,14 @@ export const MenuSocial = ({ open, openTrue, openFalse }) => {
             >
               <PhoneIphoneIcon />
             </a>
+            <Button
+              type='button'
+              onClick={() => changeLanguageHandler()}
+              sx={{ padding: '0', color: 'white', fontWeight: '700' }}
+              variant='text'
+            >
+              {locale === 'en' ? 'fr' : 'en'}
+            </Button>
           </Box>
         </Paper>
       </ClickAwayListener>

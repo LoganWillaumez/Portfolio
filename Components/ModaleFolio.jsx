@@ -39,7 +39,6 @@ export default function ModaleFolio({
   //   const [open, setOpen] = React.useState(false);
   //   const handleOpen = () => setOpen(true);
   //   const handleClose = () => setOpen(false);
-  console.log(`üöÄ ~ icon`, icon);
 
   return (
     <div>

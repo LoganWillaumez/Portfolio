@@ -16,7 +16,6 @@ export default function Model({ ...props }) {
   // useFrame(() => (meshMat.current.material.opacity -= 0.01));
   // useEffect(() => {
   //   meshMat.current.material.opacity = props.active ? 1 : 0;
-  //   console.log(`🚀 ~ opacity`, opacity);
   //   meshMat.current.material.transparent = true;
   // }, [props.active]);
   const { nodes, materials } = useGLTF('/mesh/Cap/Cap.gltf');

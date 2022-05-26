@@ -9,7 +9,20 @@ import IconButton from '@mui/material/IconButton';
 import 'animate.css';
 import { useMediaMatch } from 'rooks';
 import { Loader, useProgress } from '@react-three/drei';
+import { useTranslation } from 'next-i18next';
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['about'])),
+    },
+  };
+}
+
 const About = () => {
+  const { t } = useTranslation('about');
   // Fix the problem of hydratation
   const [active, setActive] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -49,7 +62,7 @@ const About = () => {
                   marginBottom: '2vh',
                 }}
               >
-                From 3D to web.
+                {t('about-title')}
               </Typography>
               <Box
                 sx={{
@@ -96,10 +109,7 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    My love for the profession of passions lead me to the field
-                    of 3D. After studying as an artist environment, I was able
-                    to find a job at a company specializing in 3D railway
-                    simulations.
+                    {t('about-3d-1')}
                   </Typography>
                   <Typography
                     sx={{
@@ -108,11 +118,7 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    Event though I continued to be fascinated by 3D, I also
-                    tried my hands at the technical side of this profession(C#
-                    under Unity, Vex,...) but It was not enough, and I became
-                    more and more passionate about web development as I
-                    discovered it.
+                    {t('about-3d-2')}
                   </Typography>
                 </Box>
                 <Box
@@ -150,11 +156,7 @@ const About = () => {
                       fontWeight: '300',
                     }}
                   >
-                    After considering it for a while, I decided to quit my job
-                    and pursue my passion. And it was the right decision ! Then
-                    continued my way to the O'clock school, where I learned the
-                    foundations of the web development field. It was a rewarding
-                    experience that comforted me in my decision.
+                    {t('about-web-1')}
                   </Typography>
                   <Typography
                     sx={{
@@ -165,10 +167,7 @@ const About = () => {
                       },
                     }}
                   >
-                    Although I specialise in React and its facets, the back-end
-                    does not leave me uninterested. I intend to advance in all
-                    aspects of web development, front and back, to one day be
-                    able to claim to be a full stack developer..
+                    {t('about-web-2')}
                   </Typography>
                 </Box>
               </Box>

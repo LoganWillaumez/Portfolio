@@ -13,7 +13,20 @@ import { useRef, useState } from 'react';
 import EmailSnackbar from '../Components/EmailSnackbar';
 import EmailLoader from '../Components/EmailLoader';
 
-export default function SignInSide() {
+import { useTranslation } from 'next-i18next';
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['contact'])),
+    },
+  };
+}
+
+export default function SignInSide({ locale }) {
+  const { t } = useTranslation('contact');
   // Controlled input
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -117,7 +130,7 @@ export default function SignInSide() {
               <EmailIcon />
             </Avatar>
             <Typography component='h1' variant='h5'>
-              Feel free to contact me !
+              {t('contact-intro')}
             </Typography>
             <Box
               component='form'
@@ -155,7 +168,7 @@ export default function SignInSide() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 id='name'
-                label='Your name'
+                label={t('contact-name')}
                 name='from_name'
                 autoFocus
                 autoComplete='name'
@@ -189,7 +202,7 @@ export default function SignInSide() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 id='email'
-                label='Email Address'
+                label={t('contact-email')}
                 name='email'
                 autoComplete='email'
                 autoFocus
@@ -225,7 +238,7 @@ export default function SignInSide() {
                 onChange={(e) => setSubject(e.target.value)}
                 fullWidth
                 id='subject'
-                label='Your Subject'
+                label={t('contact-subject')}
                 name='subject'
                 autoFocus
               />
@@ -251,7 +264,7 @@ export default function SignInSide() {
                   // },
                 }}
                 id='filled-multiline-static'
-                label='Your message'
+                label={t('contact-message')}
                 name='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -280,7 +293,7 @@ export default function SignInSide() {
                     },
                   }}
                 >
-                  Send e-mail
+                  {t('contact-send')}
                 </Button>
               </Box>
             </Box>

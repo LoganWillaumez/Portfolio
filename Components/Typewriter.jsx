@@ -1,7 +1,9 @@
 import { Box, Typography } from '@mui/material';
 import Typewriter from 'typewriter-effect';
+import { useTranslation } from 'next-i18next';
 
 export const TypewriterEffect = () => {
+  const { t } = useTranslation('home');
   return (
     <Box
       sx={{
@@ -14,7 +16,7 @@ export const TypewriterEffect = () => {
         display='inline'
         sx={{ fontSize: 'calc(1vw + 1vh + 5vmin)', fontWeight: '700' }}
       >
-        A
+        {t('first-typewriter')}
       </Typography>
       <Typewriter
         options={{
@@ -22,13 +24,13 @@ export const TypewriterEffect = () => {
         }}
         onInit={(typewriter) => {
           typewriter
-            .typeString('front-end developer')
+            .typeString(t('01-typewriter'))
             .pauseFor(1000)
             .deleteAll()
-            .typeString('React specialist')
+            .typeString(t('02-typewriter'))
             .pauseFor(1000)
             .deleteAll()
-            .typeString('3D lover')
+            .typeString(t('03-typewriter'))
             .pauseFor(1000)
             .start();
         }}

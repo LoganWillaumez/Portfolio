@@ -1,4 +1,5 @@
 import { Layout } from '../Components/Layout';
+import { appWithTranslation } from 'next-i18next';
 import '../styles/globals.scss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, CssBaseline } from '@mui/material';
@@ -40,4 +41,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

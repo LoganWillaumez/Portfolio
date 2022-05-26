@@ -5,8 +5,22 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-export default function App() {
+import { useTranslation } from 'next-i18next';
+
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home'])),
+    },
+  };
+}
+
+export default function App({ locale }) {
   const router = useRouter();
+  const { t } = useTranslation('home');
+
   return (
     <Container
       maxWidth={false}
@@ -19,7 +33,7 @@ export default function App() {
       sx={{
         color: 'white',
         display: 'flex',
-        flexDirection: 'column',
+        display: 'flex',
         textAlign: 'left',
         justifyContent: 'center',
         height: '100%',
@@ -36,7 +50,7 @@ export default function App() {
         }}
       >
         <Typography variant='h4' component='h2'>
-          Hey there ! I'm {''}
+          {t('firstMessage')}
           <Typography
             display={'inline'}
             sx={{ color: '#FB8402', fontWeight: '600', fontSize: '2.5rem' }}
@@ -56,7 +70,7 @@ export default function App() {
           <TypewriterEffect />
         </Typography>
         <Typography sx={{ fontWeight: '700' }} variant='h6' component='h3'>
-          Passion above all
+          {t('subtitle')}
         </Typography>
         <Typography
           sx={{
@@ -65,8 +79,7 @@ export default function App() {
           }}
           component='p'
         >
-          After discovering the world of 3D, my passion lead me now to the world
-          of web development.
+          {t('subtitle-text')}
         </Typography>
         <Box sx={{ display: 'flex', gap: '2vh' }}>
           <Button
@@ -76,7 +89,7 @@ export default function App() {
               router.push('/contact');
             }}
           >
-            Contact me
+            {t('button-contact')}
           </Button>
           <Button
             target={'_blank'}
@@ -91,7 +104,7 @@ export default function App() {
             }}
             variant='contained'
           >
-            Get CV
+            {t('button-cv')}
           </Button>
         </Box>
       </Container>

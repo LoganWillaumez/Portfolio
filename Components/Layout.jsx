@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { Footer } from './Footer';
 import { Header } from './Header';
 import { MenuSocial } from './MenuSocial';
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      locale,
+    },
+  };
+}
 
 export const Layout = ({ children }) => {
   const [open, setOpen] = useState(false);
