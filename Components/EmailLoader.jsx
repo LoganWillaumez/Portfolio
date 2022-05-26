@@ -10,6 +10,7 @@ export default function EmailLoader() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
+        zIndex: '99',
       }}
     >
       <CircularProgress color='inherit' size={150} />
