@@ -4,5 +4,7 @@
   "contact-email": "Votre Email",
   "contact-subject": "Votre Sujet",
   "contact-message": "Votre Message",
-  "contact-send": "ENVOYER L'EMAIL"
+  "contact-send": "ENVOYER L'EMAIL",
+  "feedback-ok": "Email envoyé! Je vous répondrais dans les plus bref délais, merci!",
+  "feedback-nonok": "Une erreur est survenue, s'il vous plaît recommencez."
 }

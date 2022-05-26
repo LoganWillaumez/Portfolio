@@ -293,6 +293,8 @@ export default function SignInSide({ locale }) {
         </Box>
       </Grid>
       <EmailSnackbar
+        successMessage={t('feedback-ok')}
+        errorMessage={t('feedback-nonok')}
         setSuccess={setSuccess}
         success={success}
         open={open}

@@ -7,7 +7,14 @@ const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant='filled' {...props} />;
 });
 
-export default function EmailSnackbar({ setSuccess, success, open, setOpen }) {
+export default function EmailSnackbar({
+  successMessage,
+  errorMessage,
+  setSuccess,
+  success,
+  open,
+  setOpen,
+}) {
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
@@ -23,9 +30,7 @@ export default function EmailSnackbar({ setSuccess, success, open, setOpen }) {
           severity={success ? 'success' : 'error'}
           sx={{ width: '100%' }}
         >
-          {success
-            ? "E-mail send ! I'll reseponse as soon as possible, thanks!"
-            : 'An error occur, please retry'}
+          {success ? successMessage : errorMessage}
         </Alert>
       </Snackbar>
     </Stack>
