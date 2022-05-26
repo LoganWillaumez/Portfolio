@@ -38,8 +38,11 @@ import { useGLTF } from '@react-three/drei';
 import React, { useRef, useEffect, useState } from 'react';
 import { useGLTF, useTexture } from '@react-three/drei';
 import { useSpring, animated, config } from '@react-spring/three';
+<<<<<<< HEAD
 import { useFrame, TextureLoader } from '@react-three/fiber';
 >>>>>>> cf87511 ([MERGE](shader): add cap and texture)
+=======
+>>>>>>> 4e0b74c ([MERGE](cleanup): cleanup project)
 
 export default function Model({ ...props }) {
   const [colorVsCode, colorBlender] = useTexture([
@@ -57,17 +60,11 @@ export default function Model({ ...props }) {
     scale: !props.active ? 1 : 0,
     config: {
       ...config.wobbly,
-      // duration: !props.active ? 450 : 0,
     },
     immediate: !props.active ? false : true,
   });
   const group = useRef();
   const mesh = useRef();
-  // useFrame(() => (meshMat.current.material.opacity -= 0.01));
-  // useEffect(() => {
-  //   meshMat.current.material.opacity = props.active ? 1 : 0;
-  //   meshMat.current.material.transparent = true;
-  // }, [props.active]);
   const { nodes, materials } = useGLTF('/mesh/Cap/Cap.gltf');
 <<<<<<< HEAD
 >>>>>>> 192898c ([MERGE](page-structure): add structure page)

@@ -8,7 +8,6 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
 import { useWindowSize } from 'rooks';
 import Cap from '../public/mesh/Cap/Cap';
-import CapVsCode from '../public/mesh/Cap/CapVsCode';
 import { useMediaMatch } from 'rooks';
 export const Box = () => {
   const boxRef = useRef();
