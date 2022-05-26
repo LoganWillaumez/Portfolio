@@ -313,6 +313,10 @@ packages:
       }
     dev: false
 
+  /@corex/deepmerge/2.6.148:
+    resolution: {integrity: sha512-6QMz0/2h5C3ua51iAnXMPWFbb1QOU1UvSM4bKBw5mzdT+WtLgjbETBBIQZ+Sh9WvEcGwlAt/DEdRpIC3XlDBMA==}
+    dev: false
+
   /@emotion/babel-plugin/11.9.2:
     resolution:
       {

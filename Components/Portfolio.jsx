@@ -38,7 +38,7 @@ export default function TitlebarImageList({ projectData }) {
               setModalData(item);
             }}
           >
-            <img
+            <Image
               layout='fill'
               style={{ objectFit: 'cover', height: '20vh' }}
               src={`${item.img}?w=248&fit=crop&auto=format`}

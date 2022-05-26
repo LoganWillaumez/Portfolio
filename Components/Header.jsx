@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Linkmui from '@mui/material/Link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+
 export const Header = () => {
   const { pathname, locale } = useRouter();
   return (
