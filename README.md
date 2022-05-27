@@ -58,10 +58,6 @@ More feedback on the loaded elements (like images), even if it's quick with Next
 Missing some dynamic elements to the background.
 Missing animated page change.
 
-## Presentation (French)
-
-https://youtu.be/1VZvLR_oEVg?t=4882
-
 ## Demo
 
 https://portfolio-loganw.vercel.app
