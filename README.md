@@ -60,4 +60,4 @@ Missing animated page change.
 
 ## Demo
 
-https://temp-folio-loganwillaumez.vercel.app
+https://portfolio-loganw.vercel.app

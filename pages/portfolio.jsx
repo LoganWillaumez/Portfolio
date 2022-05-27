@@ -31,18 +31,22 @@ const Playground = () => {
       img: 'https://user-images.githubusercontent.com/60406970/170542091-925b7a0e-6c07-4a02-bb87-534becc40e49.png',
       title: 'Circles',
       desc: t('circles-desc'),
-      icon: [
-        '/imgs/react-2.svg',
-        '/imgs/tailwind-css-2.svg',
-        '/imgs/redux.svg',
-      ],
+      url: 'https://github.com/LoganWillaumez/Circles',
+      icon: ['/imgs/react-2.svg', '/imgs/redux.svg'],
     },
     {
       img: 'https://user-images.githubusercontent.com/60406970/170548293-28a2d4ab-708a-4a94-a6ca-02831c7117a7.png',
       title: 'Portfolio',
       desc: t('portfolio-desc'),
       url: 'https://github.com/LoganWillaumez/Portfolio',
-      icon: ['/imgs/next-js.svg', '/imgs/threejs-1.svg'],
+      icon: [
+        '/imgs/next-js.svg',
+        '/imgs/threejs-1.svg',
+        '/imgs/tailwind-css-2.svg',
+        '/imgs/nodejs-2-1.svg',
+        '/imgs/socket-io-1.svg',
+        '/imgs/jwt-3.svg',
+      ],
     },
   ];
   return (
