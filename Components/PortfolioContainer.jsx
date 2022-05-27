@@ -25,6 +25,7 @@ export default function TitlebarImageList({ projectData, info }) {
         sx={{
           overflow: 'auto',
           height: '70vh',
+          paddingLeft: { lg: '5rem' },
           '&::-webkit-scrollbar': {
             display: 'none',
           },
