@@ -98,7 +98,7 @@ export default function App({ locale }) {
           </Button>
           <Button
             target={'_blank'}
-            href={'/files/cv_LoganWillaumez.pdf'}
+            href={'/files/cv-LoganWillaumez.pdf'}
             sx={{
               bgcolor: '#FB8402',
               color: 'white',

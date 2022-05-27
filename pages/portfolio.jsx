@@ -21,9 +21,9 @@ const Playground = () => {
       desc: t('lusco-desc'),
       url: 'https://github.com/LoganWillaumez/Lusco',
       icon: [
-        '/imgs/react-2.svg',
         '/imgs/tailwind-css-2.svg',
-        '/imgs/vitejs.svg',
+        '/imgs/next-js.svg',
+        '/imgs/redux.svg',
       ],
     },
 
@@ -42,14 +42,11 @@ const Playground = () => {
       ],
     },
     {
-      img: 'https://user-images.githubusercontent.com/60406970/170548293-28a2d4ab-708a-4a94-a6ca-02831c7117a7.png',
+      img: 'https://user-images.githubusercontent.com/60406970/173608632-479f16d6-6899-454c-bd35-afc660b5f851.png',
       title: 'Portfolio',
       desc: t('portfolio-desc'),
       url: 'https://github.com/LoganWillaumez/Portfolio',
-      icon: [
-        '/imgs/next-js.svg',
-        '/imgs/threejs-1.svg',
-      ],
+      icon: ['/imgs/next-js.svg', '/imgs/threejs-1.svg'],
     },
   ];
   return (

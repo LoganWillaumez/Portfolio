@@ -1,11 +1,11 @@
 {
   "firstMessage": "Hey there ! I'm ",
   "first-typewriter": "A",
-  "01-typewriter": "front-end developer",
-  "02-typewriter": "React specialist",
-  "03-typewriter": "3D lover",
+  "01-typewriter": "Web developer",
+  "02-typewriter": "Tech agnostic",
+  "03-typewriter": "Passionate about coding",
   "subtitle": "Passion above all",
-  "subtitle-text": "Having discovered 3D, my passion led me now to the realm of web development",
+  "subtitle-text": "Having discovered 3D, my passion led me now to the realm of web development. Though I am agnostic about all technologies, I have an appetence for the Front.",
   "button-contact": "CONTACT ME",
   "button-cv": "GET CV"
 }

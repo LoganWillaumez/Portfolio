@@ -7,6 +7,7 @@ import { useMediaMatch } from 'rooks';
 import { useTranslation } from 'next-i18next';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { Loader } from '@react-three/drei';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -31,7 +32,7 @@ const About = () => {
   };
   return (
     <>
-      <Suspense fallback={null}>
+      <Suspense fallback={Loader}>
         {mounted && (
           <Container maxWidth={false} disableGutters sx={{ height: '92%' }}>
             <Box

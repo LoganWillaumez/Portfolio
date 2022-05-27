@@ -91,7 +91,7 @@ export const MenuSocial = ({ open, openTrue, openFalse }) => {
               </a>
               <a
                 style={{ color: 'white' }}
-                href='tel:0683485118'
+                href='tel:0033764267034'
                 target='_blank'
                 rel='noopener noreferrer'
                 aria-label='link for my phone number'

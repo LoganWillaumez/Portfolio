@@ -14,8 +14,8 @@ export const Header = () => {
           name='description'
           content={
             locale === 'en'
-              ? 'A portfolio of a frond-end developer residing in Moselle looking for a job.'
-              : "Un portfolio d'un front-end développeur résidant en Moselle en recherche d'un emploi"
+              ? 'A portfolio of a fullstack developer residing in Grand-est looking for a job.'
+              : "Un portfolio d'un fullstack développeur résidant dans le Grand-est en recherche d'un emploi"
           }
         ></meta>
         <meta
