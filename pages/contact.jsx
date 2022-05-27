@@ -68,29 +68,30 @@ export default function SignInSide({ locale }) {
   return (
     <>
       {loading && <EmailLoader />}
-      <Grid
-        container
-        component='main'
-        sx={{
-          paddingTop: '2rem',
-          height: { xs: '90vh', lg: 'fit-content' },
-          width: '90vw',
-          margin: '0 auto',
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: { lg: '15rem' },
-          overflow: 'scroll',
-          paddingTop: { xs: '2rem', lg: '0' },
-          ' &::-webkit-scrollbar': {
-            display: 'none',
-          },
-          ' &:focus': {
-            display: 'none',
-          },
-        }}
-      >
-        <CssBaseline />
-        {/* <Grid
+      <Box>
+        <Grid
+          container
+          component='main'
+          sx={{
+            paddingTop: '2rem',
+            height: { xs: '90vh', lg: '80vh' },
+            width: '90vw',
+            margin: '0 auto',
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: { lg: '10vh' },
+            overflow: 'scroll',
+            paddingTop: { xs: '2rem', lg: '0' },
+            ' &::-webkit-scrollbar': {
+              display: 'none',
+            },
+            ' &:focus': {
+              display: 'none',
+            },
+          }}
+        >
+          <CssBaseline />
+          {/* <Grid
         item
         xs={false}
         sm={4}
@@ -108,190 +109,194 @@ export default function SignInSide({ locale }) {
       >
         Coucou
       </Grid> */}
-        <Box xs={12} sm={8} lg={5} component={Paper} elevation={6} square>
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <Avatar sx={{ m: 1, bgcolor: '#FB8402', color: 'white' }}>
-              <EmailIcon />
-            </Avatar>
-            <Typography component='h1' variant='h5'>
-              {t('contact-intro')}
-            </Typography>
+          <Box xs={12} sm={8} lg={5} component={Paper} elevation={6} square>
             <Box
-              component='form'
-              ref={form}
-              noValidate
-              // onSubmit={handleSubmit}
-              onSubmit={sendEmail}
               sx={{
-                mt: 1,
+                my: 8,
+                mx: 4,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
               }}
             >
-              <TextField
+              <Avatar sx={{ m: 1, bgcolor: '#FB8402', color: 'white' }}>
+                <EmailIcon />
+              </Avatar>
+              <Typography component='h1' variant='h5'>
+                {t('contact-intro')}
+              </Typography>
+              <Box
+                component='form'
+                ref={form}
+                noValidate
+                // onSubmit={handleSubmit}
+                onSubmit={sendEmail}
                 sx={{
-                  mb: { xs: 2, lg: 2 },
-                  input: {
-                    '&:-webkit-autofill': {
-                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
-                      WebkitTextFillColor: '#fff',
-                    },
-                  },
-                  '& .MuiOutlinedInput-root': {
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#808080',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    '&.Mui-focused': {
-                      color: '#FC8B20',
-                    },
-                  },
+                  mt: 1,
                 }}
-                margin='normal'
-                required
-                fullWidth
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                id='name'
-                label={t('contact-name')}
-                name='from_name'
-                autoFocus
-                autoComplete='name'
-                // InputLabelProps={{
-                //   shrink: true,
-                // }}
-              />
-              <TextField
-                sx={{
-                  mb: { xs: 2, lg: 2 },
-                  input: {
-                    '&:-webkit-autofill': {
-                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
-                      WebkitTextFillColor: '#fff',
-                    },
-                  },
-                  '& .MuiOutlinedInput-root': {
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#808080',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    '&.Mui-focused': {
-                      color: '#FC8B20',
-                    },
-                  },
-                }}
-                margin='normal'
-                required
-                fullWidth
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                id='email'
-                label={t('contact-email')}
-                name='email'
-                autoComplete='email'
-                autoFocus
-              />
-              <TextField
-                sx={{
-                  mb: { xs: 2, lg: 2 },
-                  input: {
-                    '&:-webkit-autofill': {
-                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
-                      WebkitTextFillColor: '#fff',
-                    },
-                  },
-                  '& .MuiOutlinedInput-root': {
-                    '&.Mui-focused fieldset': {
-                      borderColor: '#808080',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    '&.Mui-focused': {
-                      color: '#FC8B20',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    '&.Mui-focused': {
-                      color: '#FC8B20',
-                    },
-                  },
-                }}
-                margin='normal'
-                required
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                fullWidth
-                id='subject'
-                label={t('contact-subject')}
-                name='subject'
-                autoFocus
-              />
-              <TextField
-                fullWidth
-                sx={{
-                  mb: { xs: 2, lg: 2 },
-                  input: {
-                    '&:-webkit-autofill': {
-                      WebkitBoxShadow: '0 0 0 100px #333233 inset',
-                      WebkitTextFillColor: '#fff',
-                    },
-                  },
-                  '& .MuiInputLabel-root': {
-                    '&.Mui-focused': {
-                      color: '#FC8B20',
-                    },
-                  },
-                  // '& .MuiOutlinedInput-root': {
-                  //   '&.Mui-focused fieldset': {
-                  //     borderColor: '#FC8B20',
-                  //   },
-                  // },
-                }}
-                id='filled-multiline-static'
-                label={t('contact-message')}
-                name='message'
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                multiline
-                rows={6}
-                variant='filled'
-              />
-              <Box fullWidth sx={{ display: 'flex', justifyContent: 'center' }}>
-                <Button
-                  type='submit'
-                  fullWidth
-                  variant='contained'
+              >
+                <TextField
                   sx={{
-                    width: '100%',
-                    bgcolor: '#FB8402',
-                    mb: 3,
-                    mt: 2,
-                    width: '150px',
-                    color: 'white',
-                    fontWeight: '700',
-                    ':focus': {
-                      bgcolor: '#FB8402',
+                    mb: { xs: 2, lg: 2 },
+                    input: {
+                      '&:-webkit-autofill': {
+                        WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                        WebkitTextFillColor: '#fff',
+                      },
                     },
-                    ':visited': {
-                      bgcolor: '#FB8402',
+                    '& .MuiOutlinedInput-root': {
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#808080',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      '&.Mui-focused': {
+                        color: '#FC8B20',
+                      },
                     },
                   }}
+                  margin='normal'
+                  required
+                  fullWidth
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  id='name'
+                  label={t('contact-name')}
+                  name='from_name'
+                  autoFocus
+                  autoComplete='name'
+                  // InputLabelProps={{
+                  //   shrink: true,
+                  // }}
+                />
+                <TextField
+                  sx={{
+                    mb: { xs: 2, lg: 2 },
+                    input: {
+                      '&:-webkit-autofill': {
+                        WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                        WebkitTextFillColor: '#fff',
+                      },
+                    },
+                    '& .MuiOutlinedInput-root': {
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#808080',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      '&.Mui-focused': {
+                        color: '#FC8B20',
+                      },
+                    },
+                  }}
+                  margin='normal'
+                  required
+                  fullWidth
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  id='email'
+                  label={t('contact-email')}
+                  name='email'
+                  autoComplete='email'
+                  autoFocus
+                />
+                <TextField
+                  sx={{
+                    mb: { xs: 2, lg: 2 },
+                    input: {
+                      '&:-webkit-autofill': {
+                        WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                        WebkitTextFillColor: '#fff',
+                      },
+                    },
+                    '& .MuiOutlinedInput-root': {
+                      '&.Mui-focused fieldset': {
+                        borderColor: '#808080',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      '&.Mui-focused': {
+                        color: '#FC8B20',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      '&.Mui-focused': {
+                        color: '#FC8B20',
+                      },
+                    },
+                  }}
+                  margin='normal'
+                  required
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  fullWidth
+                  id='subject'
+                  label={t('contact-subject')}
+                  name='subject'
+                  autoFocus
+                />
+                <TextField
+                  fullWidth
+                  sx={{
+                    mb: { xs: 2, lg: 2 },
+                    input: {
+                      '&:-webkit-autofill': {
+                        WebkitBoxShadow: '0 0 0 100px #333233 inset',
+                        WebkitTextFillColor: '#fff',
+                      },
+                    },
+                    '& .MuiInputLabel-root': {
+                      '&.Mui-focused': {
+                        color: '#FC8B20',
+                      },
+                    },
+                    // '& .MuiOutlinedInput-root': {
+                    //   '&.Mui-focused fieldset': {
+                    //     borderColor: '#FC8B20',
+                    //   },
+                    // },
+                  }}
+                  id='filled-multiline-static'
+                  label={t('contact-message')}
+                  name='message'
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  multiline
+                  rows={6}
+                  variant='filled'
+                />
+                <Box
+                  fullWidth
+                  sx={{ display: 'flex', justifyContent: 'center' }}
                 >
-                  {t('contact-send')}
-                </Button>
+                  <Button
+                    type='submit'
+                    fullWidth
+                    variant='contained'
+                    sx={{
+                      width: '100%',
+                      bgcolor: '#FB8402',
+                      mb: 3,
+                      mt: 2,
+                      width: '150px',
+                      color: 'white',
+                      fontWeight: '700',
+                      ':focus': {
+                        bgcolor: '#FB8402',
+                      },
+                      ':visited': {
+                        bgcolor: '#FB8402',
+                      },
+                    }}
+                  >
+                    {t('contact-send')}
+                  </Button>
+                </Box>
               </Box>
             </Box>
           </Box>
-        </Box>
-      </Grid>
+        </Grid>
+      </Box>
       <EmailSnackbar
         successMessage={t('feedback-ok')}
         errorMessage={t('feedback-nonok')}
