@@ -2,12 +2,8 @@ import { Box, Container, Divider, Typography } from '@mui/material';
 import CapNavigation from '../Components/CapNavigation';
 import { SceneCap } from '../Components/SceneCap';
 import { Suspense, useEffect, useState } from 'react';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import IconButton from '@mui/material/IconButton';
 import 'animate.css';
 import { useMediaMatch } from 'rooks';
-import { Loader, useProgress } from '@react-three/drei';
 import { useTranslation } from 'next-i18next';
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -78,7 +74,7 @@ const About = () => {
                 <Box
                   sx={{
                     height: '28vh',
-                    overflowY: 'scroll',
+                    overflowY: 'auto',
                     gap: '1rem',
                     zIndex: '5',
                     float: 'left',
@@ -96,7 +92,7 @@ const About = () => {
                           display: 'none',
                         }),
                     '&::-webkit-scrollbar': {
-                      display: 'none',
+                      // display: 'none',
                     },
                   }}
                 >
@@ -180,35 +176,6 @@ const About = () => {
         active={active}
         setActive={setActive}
       />
-      {/* <IconButton
-        sx={{
-          position: 'fixed',
-          left: '5vw',
-          bottom: '35vh',
-        }}
-      >
-        <ArrowBackIosIcon
-          sx={{
-            position: 'fixed',
-            left: '5vw',
-            bottom: '35vh',
-            fontSize: 'calc(1vw + 1vh + 5vmin)',
-          }}
-        />
-      </IconButton>
-      <IconButton
-        sx={{
-          position: 'fixed',
-          right: '5vw',
-          bottom: '35vh',
-        }}
-      >
-        <ArrowForwardIosIcon
-          sx={{
-            fontSize: 'calc(1vw + 1vh + 5vmin)',
-          }}
-        />
-      </IconButton> */}
     </>
   );
 };
