@@ -18,6 +18,10 @@ export const Header = () => {
               : "Un portfolio d'un front-end développeur résidant en Moselle en recherche d'un emploi"
           }
         ></meta>
+        <meta
+          property='og:image'
+          content='https://github.com/LoganWillaumez/Portfolio'
+        />
       </Head>
 
       <Container
