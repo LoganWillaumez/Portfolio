@@ -49,10 +49,6 @@ const Playground = () => {
       icon: [
         '/imgs/next-js.svg',
         '/imgs/threejs-1.svg',
-        '/imgs/tailwind-css-2.svg',
-        '/imgs/nodejs-2-1.svg',
-        '/imgs/socket-io-1.svg',
-        '/imgs/jwt-3.svg',
       ],
     },
   ];
