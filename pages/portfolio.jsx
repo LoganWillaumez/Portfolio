@@ -32,7 +32,14 @@ const Playground = () => {
       title: 'Circles',
       desc: t('circles-desc'),
       url: 'https://github.com/LoganWillaumez/Circles',
-      icon: ['/imgs/react-2.svg', '/imgs/redux.svg'],
+      icon: [
+        '/imgs/react-2.svg',
+        '/imgs/redux.svg',
+        '/imgs/tailwind-css-2.svg',
+        '/imgs/nodejs-2-1.svg',
+        '/imgs/socket-io-1.svg',
+        '/imgs/jwt-3.svg',
+      ],
     },
     {
       img: 'https://user-images.githubusercontent.com/60406970/170548293-28a2d4ab-708a-4a94-a6ca-02831c7117a7.png',
