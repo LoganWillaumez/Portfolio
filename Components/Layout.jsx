@@ -3,6 +3,7 @@ import { Header } from './Header';
 import { MenuSocial } from './MenuSocial';
 export const Layout = ({ children }) => {
   const [open, setOpen] = useState(false);
+
   const openTrue = () => {
     setOpen(true);
   };
