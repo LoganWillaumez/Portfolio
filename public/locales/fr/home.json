@@ -2,11 +2,11 @@
   "firstMessage": "Salut ! Je suis ",
   "firstMessage-name": "Logan",
   "first-typewriter": "Un",
-  "01-typewriter": "front-end developer",
-  "02-typewriter": "Spécialiste React",
-  "03-typewriter": "Amoureux de la 3D",
+  "01-typewriter": "Développeur Web",
+  "02-typewriter": "Tech agnostique",
+  "03-typewriter": "Passionné du code",
   "subtitle": "La passion avant tout",
-  "subtitle-text": "Après avoir découvert la 3D, ma passion m'emmène maintenant dans le monde du web développement.",
+  "subtitle-text": "Après avoir découvert la 3D, ma passion m'emmène maintenant dans le monde du web développement. Agnostique de toutes technologies, j'ai une appétence pour le Front.",
   "button-contact": "ME CONTACTER",
   "button-cv": "VOIR MON CV"
 }
